@@ -1,11 +1,17 @@
 import { registerBlockType } from "@wordpress/blocks";
 import { useBlockProps } from '@wordpress/block-editor';
 
+import './style.scss';
+import './style-editor.scss';
+
 registerBlockType("blocks-course/firstblock", {
     edit: function () {
-        return <p className="classa">Edit JSXA</p>;
+        const blockProps = useBlockProps();
+        //console.log(blockProps);
+        return <p {...blockProps}>Edit JSXA</p>;
     },
     save: function () {
-        return <p className="blassa">Save JSX</p>;
+        const blockProps = useBlockProps.save();
+        return <p {...blockProps}>Save JSX</p>;
     },
 });
