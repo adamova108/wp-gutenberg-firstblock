@@ -1,0 +1,39 @@
+{
+  "name": "wp-gutenberg-firstblock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "prepare": "husky install"
+  },
+  "prettier": "@wordpress/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamova108/wp-gutenberg-firstblock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamova108/wp-gutenberg-firstblock/issues"
+  },
+  "homepage": "https://github.com/adamova108/wp-gutenberg-firstblock#readme",
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^10.0.1",
+    "@wordpress/prettier-config": "^1.1.2",
+    "@wordpress/scripts": "^21.0.1",
+    "@wordpress/stylelint-config": "^20.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^8.1.1",
+    "@wordpress/blocks": "^11.2.1"
+  }
+}
